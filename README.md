@@ -72,3 +72,4 @@ To reduce downtime during new deployment, terraform lifecycle policy has been us
 - What can be improved upon?
   - Sometimes changing/modifying the ECS task definition outside of terraform may be required(e.g. through AWS console or Jenkins etc). In such cases, `ignore_changes` flag can be used through terraform lifecycle policy block.
   -  Code analysis tool like Sonarqube can be integrated with the CI-CD pipeline to provide continuous inspection of the code to highlight existing and newly introduced issues.
+  -  Terraform satte file should be stored remotely(e.g. in S3 bucket) by configuring `backend`.
