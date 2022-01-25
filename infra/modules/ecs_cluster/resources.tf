@@ -243,7 +243,6 @@ resource "aws_ecs_service" "service" {
   cluster                            = aws_ecs_cluster.ecs_cluster.id
   task_definition                    = aws_ecs_task_definition.primary.arn
   desired_count                      = var.desired_count
-  platform_version                   = var.fargate_platform_version
   launch_type                        = "FARGATE"
 
   network_configuration {
