@@ -46,8 +46,9 @@ infra/
 ```
 
 The `module` directory contains re-usuable terraform codes. To set up up the infrastructure, we have used TWO modules: 
-`ecr` - To provision a AWS ECR repository to store the application docker image.
-`ecs_cluster` - To provision AWS ECS cluster. It creates:
+- `ecr` - To provision a AWS ECR repository to store the application docker image.
+- `ecs_cluster` - To setup AWS ECS cluster. This module creates:
+
 ```
 Application Load Balancer
 Application Load Balancer Listner
